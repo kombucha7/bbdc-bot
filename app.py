@@ -11,7 +11,8 @@ from selenium.webdriver.common.by import By
 import time
 
 # setup logging
-logging.basicConfig(filename="log.txt", format='%(asctime)s %(message)s', level=logging.INFO)
+logging.basicConfig(filename="log.txt",
+                    format='%(asctime)s %(message)s', level=logging.INFO)
 
 
 def app(config):
@@ -30,8 +31,7 @@ def app(config):
     chrome_host = config["chromedriver"]["host"]
 
     # connect to chrome
-    browser = webdriver.Remote(
-        '{:}/wd/hub'.format(chrome_host), DesiredCapabilities.CHROME)
+    # browser = webdriver.Remote('{:}/wd/hub'.format(chrome_host), DesiredCapabilities.CHROME)
     browser = webdriver.Chrome()
     browser.get('https://info.bbdc.sg/members-login/')
 
@@ -151,6 +151,5 @@ def app(config):
     elif not wanted and enable_bot:
         message = f"No slots availabe at {time.localtime()}"
         send_message(message, bot_token, chat_id)
-        
-    browser.quit()
 
+    browser.quit()
