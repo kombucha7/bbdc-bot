@@ -36,11 +36,13 @@ def app(config):
     browser.get('https://info.bbdc.sg/members-login/')
 
     # login BBDC
-    idLogin = browser.find_element_by_id('txtNRIC')
+    wait = WebDriverWait(browser, 10)
+    wait.until(EC.presence_of_element_located((By.ID, "txtNRIC")))
+    idLogin = browser.find_element(By.ID, 'txtNRIC')
     idLogin.send_keys(username)
-    idLogin = browser.find_element_by_id('txtPassword')
-    idLogin.send_keys(password)
-    loginButton = browser.find_element_by_name('btnLogin')
+    passwordLogin = browser.find_element(By.ID, 'txtPassword')
+    passwordLogin.send_keys(password)
+    loginButton = browser.find_element(By.ID, 'loginbtn')
     loginButton.click()
 
     # proceed unsure form (Chrome)
@@ -51,19 +53,23 @@ def app(config):
 
     # Switching to Left Frame and accessing element by text
     browser.switch_to.default_content()
-    frame = browser.find_element_by_name('leftFrame')
+    frame = browser.find_element(By.NAME, 'leftFrame')
     browser.switch_to.frame(frame)
-    nonFixedInstructor = browser.find_element_by_link_text(
-        'Booking without Fixed Instructor')
+    # nonFixedInstructor = browser.find_element_by_link_text(
+    #     'Booking without Fixed Instructor')
+    nonFixedInstructor = browser.find_element(
+        By.LINK_TEXT, 'Booking without Fixed Instructor')
     nonFixedInstructor.click()
 
     # Switching back to Main Frame and pressing 'I Accept'
     browser.switch_to.default_content()
     wait = WebDriverWait(browser, 30)
     wait.until(EC.frame_to_be_available_and_switch_to_it(
-        browser.find_element_by_name('mainFrame')))
+        browser.find_element(By.NAME, 'mainFrame')))
     wait.until(EC.visibility_of_element_located(
         (By.CLASS_NAME, "btn"))).click()
+    acceptBtn = browser.find_element(By.CLASS_NAME, 'btn')
+    acceptBtn.click()
 
     # Selection menu
     browser.switch_to.default_content()
