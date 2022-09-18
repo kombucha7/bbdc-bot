@@ -19,17 +19,17 @@ $ docker pull selenium/standalone-chrome:94.0
 ## Clone the repo
 
 ```sh
-$ git clone https://github.com/lizzzcai/bbdc-booking-bot.git
-$ cd bbdc-booking-bot
+$ git clone https://github.com/kombucha7/bbdc-bot.git
+$ cd bbdc-bot
 ```
 
 ## Create virtual environment and source the environment
 
 ```sh
 # create virtual environment
-$ python3 -m venv env
+$ python3 -m venv .venv
 # activate the environment
-$ source env/bin/activate
+$ source .venv/bin/activate
 ```
 
 ## Install dependencies
