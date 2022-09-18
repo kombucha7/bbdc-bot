@@ -13,7 +13,7 @@ Program help to check the available slots in BBDC (Bukit Batok Driving Centre), 
 ## Pull docker image of Chrome
 
 ```sh
-$ docker pull selenium/standalone-chrome:94.0
+$ docker pull selenium/standalone-chrome
 ```
 
 ## Clone the repo
