@@ -56,7 +56,7 @@ please fill in the followings in the `config.yaml`
 ## Launch Chrome container
 
 ```sh
-docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-chrome:94.0
+docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-chrome
 ```
 
 ## Run the program
