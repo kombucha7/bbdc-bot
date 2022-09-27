@@ -7,6 +7,7 @@ from config import load_config
 config = load_config("config.yaml")
 interval = config["interval"]
 
+
 def job():
     try:
         app(config)
@@ -15,7 +16,7 @@ def job():
 
 
 if __name__ == "__main__":
-    job() # test
+    job()  # test
     schedule.every(interval).minutes.do(job)
     while True:
         schedule.run_pending()
