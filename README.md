@@ -65,7 +65,7 @@ docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-chro
 python main.py
 ```
 
-# Reference
+# References
 
 - https://github.com/rohit0718/BBDC-Bot
 - https://github.com/weimingwill/bbdc-booking
