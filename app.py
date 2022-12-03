@@ -37,6 +37,7 @@ def app(config):
 
     # login BBDC
     wait = WebDriverWait(browser, 10)
+    wait.until(EC.presence_of_element_located((By.XPATH, '//input[@placeholer="example: 567A02071990"')))
     wait.until(EC.presence_of_element_located((By.ID, "txtNRIC")))
     id_login = browser.find_element(By.ID, 'txtNRIC')
     id_login.send_keys(username)
