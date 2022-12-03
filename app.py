@@ -33,7 +33,7 @@ def app(config):
     # connect to Chrome
     # browser = webdriver.Remote('{:}/wd/hub'.format(chrome_host), DesiredCapabilities.CHROME)
     browser = webdriver.Chrome()
-    browser.get('https://info.bbdc.sg/members-login/')
+    browser.get('https://booking.bbdc.sg/#/login?redirect=%2Fhome%2Findex')
 
     # login BBDC
     wait = WebDriverWait(browser, 10)
