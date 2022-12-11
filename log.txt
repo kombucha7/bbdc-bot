@@ -1,0 +1,31 @@
+2022-12-11 12:49:30,613 find available slots
+2022-12-11 12:55:01,852 find available slots
+2022-12-11 13:04:26,956 find available slots
+2022-12-11 13:04:27,717 No slots available at 2022-12-11
+2022-12-11 13:08:29,578 find available slots
+2022-12-11 13:08:30,283 No slots available at 2022-12-11
+2022-12-11 13:14:41,382 find available slots
+2022-12-11 13:14:42,101 No slots available at time.struct_time(tm_year=2022, tm_mon=12, tm_mday=11, tm_hour=13, tm_min=14, tm_sec=41, tm_wday=6, tm_yday=345, tm_isdst=0)
+2022-12-11 13:16:03,524 find available slots
+2022-12-11 13:16:45,999 find available slots
+2022-12-11 13:16:46,925 No slots available at time.struct_time(tm_year=2022, tm_mon=12, tm_mday=11, tm_hour=13, tm_min=16, tm_sec=45, tm_wday=6, tm_yday=345, tm_isdst=0)
+2022-12-11 13:19:41,023 find available slots
+2022-12-11 13:19:41,751 Found available slot for ["MAR'23", "APR'23", "MAY'23"]
+2022-12-11 13:22:39,491 find available slots
+2022-12-11 13:22:40,203 No slots available at time.struct_time(tm_year=2022, tm_mon=12, tm_mday=11, tm_hour=13, tm_min=22, tm_sec=39, tm_wday=6, tm_yday=345, tm_isdst=0)
+2022-12-11 13:27:27,556 find available slots
+2022-12-11 13:27:28,282 Found available slots for ["MAR'23", "APR'23", "MAY'23"]
+2022-12-11 13:29:18,797 find available slots
+2022-12-11 13:29:20,183 Found available slots for ["MAR'23"]
+2022-12-11 13:35:00,759 find available slots
+2022-12-11 13:35:01,472 Found available slots for ["MAR'23"]
+2022-12-11 13:36:26,416 find available slots
+2022-12-11 13:36:27,115 No slots available at 2022-12-11 13:36:26
+2022-12-11 13:38:37,686 find available slots
+2022-12-11 13:38:38,479 No slots available at 2022-12-11 13:38:37
+2022-12-11 13:39:19,087 find available slots
+2022-12-11 13:39:19,814 No slots available at 2022-12-11 13:39:19
+2022-12-11 13:41:30,064 find available slots
+2022-12-11 13:41:30,770 No slots available at 2022-12-11 13:41:30
+2022-12-11 13:43:01,338 find available slots
+2022-12-11 13:43:02,070 No slots available at 2022-12-11 13:43:01

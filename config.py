@@ -2,6 +2,7 @@ import sys
 import yaml
 import logging
 
+
 # function to load config
 def load_config(config_path):
     data = None
