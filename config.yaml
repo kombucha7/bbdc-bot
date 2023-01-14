@@ -8,10 +8,6 @@ bbdc:
   username: "your username"
   password: "your password"
 
-# chromedriver host for using selenium docker
-chromedriver:
-  host: http://localhost:4444
-
 # telegram bot link
 telegram:
   # enable or disable telegram bot
