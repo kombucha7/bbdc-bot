@@ -2,19 +2,14 @@
 
 Program help to check the available slots in BBDC (Bukit Batok Driving Centre), and send notification to your phone by Telegram bot.
 
+NOTE: Due to new updates to BBDC site, stricter anti-botting measures have been added so do use at your own risk.
+
 # Prerequisites
 
 - Python3
-- [Docker](https://docs.docker.com/get-docker/) (headless Chrome)
 - [Telegram Bot](https://t.me/botfather)
 
 # Setup
-
-## Pull docker image of Chrome
-
-```sh
-$ docker pull selenium/standalone-chrome
-```
 
 ## Clone the repo
 
@@ -27,9 +22,9 @@ $ cd bbdc-bot
 
 ```sh
 # create virtual environment
-$ python3 -m venv .venv
+$ python -m venv .venv
 # activate the environment
-$ source .venv/bin/activate
+$ .venv/bin/activate.ps1
 ```
 
 ## Install dependencies
@@ -48,16 +43,9 @@ please fill in the followings in the `config.yaml`
 
 - `Interval` of checking the slots (example: every 5 mins)
 - BBDC `username` and `password`
-- Your wanted `sessions`
 - Telegram Bot `token` and `chat_id`
 
 # Run the program
-
-## Launch Chrome container
-
-```sh
-docker run -d -p 4444:4444 -p 7900:7900 --shm-size="2g" selenium/standalone-chrome
-```
 
 ## Run the program
 
