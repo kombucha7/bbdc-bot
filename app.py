@@ -9,6 +9,8 @@ from selenium.webdriver.support import expected_conditions as EC
 
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service as ChromeService
 
 from bot import send_message
 
@@ -31,7 +33,7 @@ def app(config):  # sourcery skip: extract-duplicate-method
 
 
     # connect to Chrome
-    browser = webdriver.Chrome(options=chrome_options)
+    browser = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
     browser.get('https://booking.bbdc.sg/#/login?redirect=%2Fhome%2Findex')
 
     # login BBDC
